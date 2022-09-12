@@ -18,12 +18,13 @@ fetch("http://localhost:3000/workouts")
 console.log(workouts)
 
 
+
   return (
     <div className="App">
      
       <Header />
       <WorkoutForm />
-      <WorkoutContainer />
+      <WorkoutContainer workouts ={workouts}/>
     </div>
   );
 }
