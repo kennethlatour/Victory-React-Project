@@ -1,0 +1,56 @@
+{
+    "workouts" :[{
+        "id" : 1,
+        "date" :  "Monday, September 12th, 2022",
+        "Workout Type" : "Swimming", 
+        "Distance" : 2,
+        "Time Spent" : 20
+    
+    },
+    {   "id" : 2,
+        "date" :  "Friday, September 9th, 2022",
+        "Workout Type" : "Running", 
+        "Distance" : 2,
+        "Time Spent" : 20
+    },
+    {   
+         "id" : 3,
+        "date" :  "Thursday, September 8th, 2022",
+        "Workout Type" : "Walking", 
+        "Distance" : 4,
+         "Time Spent" : 80
+    },
+    {     "id" : 4,
+         "date" :  "Wednesday, September 7th, 2022",
+         "Workout Type" : "Running", 
+         "Distance" : 5,
+         "Time Spent" : 60
+
+    },
+    {
+        "id" : 5,
+        "date" :  "Tuesday, September 6th, 2022",
+        "Workout Type" : "Swimming", 
+        "Distance" : 1,
+        "Time Spent" : 30
+    },
+    {       
+        "id" : 6,
+        "date" :  "Monday, September 5th, 2022",
+        "Workout Type" : "Walking", 
+        "Distance" : 5,
+        "Time Spent" : 54
+
+
+    },
+    {   
+        "id" : 7,
+        "date" :  "Sunday, September 4th, 2022",
+        "Workout Type" : "Running", 
+        "Distance" : 3,
+        "Time Spent" : 30
+
+    }
+    
+    ]
+}
