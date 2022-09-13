@@ -9,6 +9,10 @@ import '../App.css';
 function App() {
 const [workouts, setWorkouts] = useState([])
 
+function deleteHandler(id) {
+  const deleteWorkout = workouts.filter(deleteWorkout => deleteWorkout.is !== id)
+  setWorkouts(deleteWorkout)
+}
 
 
 useEffect(() =>{
@@ -37,7 +41,7 @@ setWorkouts(...workouts, newWorkout)
      
       <Header />
       <WorkoutForm  onSubmit={handleSubmit}/>
-      <WorkoutContainer workouts ={workouts}/>
+      <WorkoutContainer workouts ={workouts} deleteWorkout = {deleteHandler}/>
     </div>
   );
 }

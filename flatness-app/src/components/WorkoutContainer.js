@@ -1,9 +1,9 @@
 import Workout from "../components/Workout"
 
-function WorkoutContainer({workouts}){
+function WorkoutContainer({workouts, deleteWorkout}){
 
 const workoutList = workouts.map((workout) =>{
-  return  <Workout  key ={workout.id} workout={workout}/>
+  return  <Workout  key ={workout.id} workout={workout} deleteWorkout = {deleteWorkout}/>
 })
 
 return (
