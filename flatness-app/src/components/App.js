@@ -10,7 +10,7 @@ function App() {
 const [workouts, setWorkouts] = useState([])
 
 function deleteHandler(id) {
-  const deleteWorkout = workouts.filter(deleteWorkout => deleteWorkout.is !== id)
+  const deleteWorkout = workouts.filter(deleteWorkout => deleteWorkout.id !== id)
   setWorkouts(deleteWorkout)
 }
 
@@ -31,9 +31,8 @@ function handleSubmit(newWorkout){
 }
 fetch('http://localhost:3000/workouts', options )
 .then((r) => r.json())
-.then(data => console.log(data))
+.then(data =>setWorkouts(...workouts, newWorkout) )
 
-setWorkouts(...workouts, newWorkout)
 }
 
   return (

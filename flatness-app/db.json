@@ -1,6 +1,20 @@
 {
   "workouts": [
     {
+      "id": 1,
+      "date": "September 4th, 2022",
+      "workoutType": "Running",
+      "distance": 3,
+      "timeSpent": 30
+    },
+    {
+      "id": 2,
+      "date": "September 5th, 2022",
+      "workoutType": "Walking",
+      "distance": 5,
+      "timeSpent": 54
+    },
+    {
       "id": 3,
       "date": "September 6th, 2022",
       "workoutType": "Swimming",
@@ -35,6 +49,5 @@
       "distance": 2,
       "timeSpent": 20
     }
-
   ]
 }
