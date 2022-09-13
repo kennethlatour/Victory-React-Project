@@ -31,9 +31,9 @@ function handleSubmit(newWorkout){
 }
 fetch('http://localhost:3000/workouts', options )
 .then((r) => r.json())
-.then(data => console.log(data))
+.then(data =>setWorkouts(...workouts, newWorkout) )
 
-setWorkouts(...workouts, newWorkout)
+
 }
 
   return (
