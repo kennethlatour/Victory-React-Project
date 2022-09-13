@@ -3,7 +3,7 @@ import React, {useState} from "react"
 function WorkoutForm({ onSubmit}){
     const [distance, setDistance] =useState('')
     const [time, setTime] = useState('')
-    const [exercise, setExercise] = useState('')
+    const [exercise, setExercise] = useState("Walking")
     const [date, setDate] = useState('')
 
 function handleDateChange(e){
