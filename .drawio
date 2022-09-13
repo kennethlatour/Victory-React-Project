@@ -62,8 +62,14 @@
                 <mxCell id="24" value="Workouts" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="40" y="560" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="20" y="680" width="500" height="390" as="geometry"/>
+                <mxCell id="26" value="UI Mock" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="680" width="500" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="690" width="480" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="700" width="20" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
