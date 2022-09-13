@@ -9,8 +9,8 @@
                         <mxPoint x="260" y="320" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="2" value="App" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="200" y="210" width="120" height="60" as="geometry"/>
+                <mxCell id="2" value="App&lt;br&gt;import Header, Workout" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="170" width="200" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -22,7 +22,7 @@
                         <mxPoint x="100" y="320" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="3" value="WorkoutContainer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="3" value="WorkoutContainer&lt;br&gt;import Workout" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="360" width="120" height="160" as="geometry"/>
                 </mxCell>
                 <mxCell id="20" style="edgeStyle=none;html=1;" parent="1" source="5" edge="1">
@@ -38,7 +38,7 @@
                         <mxPoint x="260" y="320" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="11" value="Header" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="11" value="Header&lt;br&gt;import NavBar" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="200" y="360" width="120" height="160" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="" style="endArrow=none;html=1;" parent="1" edge="1">
