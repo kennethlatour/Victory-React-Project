@@ -15,16 +15,16 @@ function Workout({ workout, deleteWorkout, favoriteHandler}){
 return(
     <div className ="individual-workouts">
        <h1> {workout.favorite ? 
-  <button className="favoite-on" onClick={()=>{favoriteHandler(workout)}}>
+  <button className="favorite-on" onClick={()=>{favoriteHandler(workout)}}>
     ★
   </button>
  : 
   <button className="favorite-off" onClick={()=>{favoriteHandler(workout)}}>
     ☆
   </button>} {sliced} </h1>
-       <p> Exercise Type : {workout.workoutType}</p>
-       <p>Distance : {workout.distance} miles</p>
-       <p>Time : {workout.timeSpent} minutes</p>
+       <p className="exerciseType"> Exercise Type : {workout.workoutType}</p>
+       <p className="exerciseDistance">Distance : {workout.distance} miles</p>
+       <p className="exerciseTime">Time : {workout.timeSpent} minutes</p>
        <button onClick={() => clickHandler(workout.id)} className="delete">Delete 🗑</button>
     </div>
 )
