@@ -39,8 +39,10 @@ return(
   </button>} {sliced} </h1>
        <p className="exerciseType"> Exercise Type : {workout.workoutType}</p>
        <p className="exerciseDistance">Distance : {workout.distance} miles</p>
-       <p className="exerciseTime">Time : {workout.timeSpent} minutes</p> 
-       <p className="exerciseCalories">Calories Burned : {calorieCounter} calories  </p>
+
+       <p className="exerciseTime">Time : {workout.timeSpent} minutes</p>
+       <p className="calories"> Calories Burned : {/** */}        calories</p>
+
        <button onClick={() => clickHandler(workout.id)} className="delete">Delete 🗑</button>
     </div>
 )
