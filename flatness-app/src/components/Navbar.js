@@ -1,24 +1,19 @@
-import {Switch, Route, Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
-
-function Navbar(){
-
-    return(
-        <div>
-             <button>
-            <Link to='/'>
-            About Us
-            </Link>
-            </button>
-            <Link to='/workouts'>
+function Navbar() {
+  return (
+    <div>
+      <button>
+        <Link to="/">Home</Link>
+      </button>
+      <button>
+        <Link to="/About">About Us</Link>
+      </button>
+      <Link to="/workouts">
         <button>List of Workouts</button>
-        </Link>
-        <Link to="/addworkout">
-        <button>Workout Form</button>
-        </Link>
-        </div>
-    )
-
+      </Link>
+    </div>
+  );
 }
 
 export default Navbar;
