@@ -30,10 +30,33 @@ function WorkoutContainer(){
   .then(data =>setWorkouts(...workouts, newWorkout) )
   
   }
+  function favoriteHandler(workout) {
+    fetch(`http://localhost:3000/workouts/${workout.id}`, {
+        method: "PATCH",
+        headers: { "Content-type": "application/json" },
+        body: JSON.stringify({ favorite: !workout.favorite }),
+      })
+        .then((res) => {
+          console.log(res);
+          return res.json();
+        })
+        .then((data) => {
+          console.log(data);
+          const updatedWorkout = workouts.map((workout) => {
+            if (workout.id === data.id) {
+              return data;
+            } else {
+              return workout;
+            }
+          });
+          setWorkouts(updatedWorkout)
+        });
+  }
+
   return(
 <div className="workoutContainer">
   <WorkoutForm  onSubmit={handleSubmit}/>
-  <WorkoutList workouts={workouts} deleteWorkout={deleteHandler}/>
+  <WorkoutList workouts={workouts} deleteWorkout={deleteHandler} favoriteHandler={favoriteHandler}/>
 </div>
   )
 

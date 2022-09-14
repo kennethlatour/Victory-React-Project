@@ -1,9 +1,9 @@
 import Workout from "./Workout";
 
-function WorkoutList({workouts, deleteWorkout}){
+function WorkoutList({workouts, deleteWorkout, favoriteHandler}){
 
     const workoutList = workouts.map((workout) =>{
-        return  <Workout  key ={workout.id} workout={workout} deleteWorkout = {deleteWorkout}/>
+        return  <Workout  key ={workout.id} workout={workout} deleteWorkout = {deleteWorkout} favoriteHandler={favoriteHandler}/>
       })
       
       return (
