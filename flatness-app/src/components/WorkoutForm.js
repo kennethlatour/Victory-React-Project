@@ -41,31 +41,33 @@ return (
 }>
     
 <div className="form-entry">
-<div className="col-5">
+    <div className="col-5">
+        <label>What date did you complete this workout?</label><br/>
         <input 
         className="form-control"
         type = "text"
         name ="date"
-        placeholder = "What date do you complete this workout?"
+        placeholder = "MM/DD/YYYY"
         value={date}
-        onChange={handleDateChange}
-/></div>
+        onChange={handleDateChange}/>
+        </div>
     <div className="col-5">
+        <label>Your distance traveled?</label><br/>
         <input 
         className="form-control"
         type = "text"
         name ="distance"
-        placeholder = "How far did you make it?"
+        placeholder = "in miles"
         value={distance}
-        onChange={handleDistanceChange}
-/>
+        onChange={handleDistanceChange}/>
   </div>
     <div className="col-5">
+        <label>Time taken?</label><br/>
         <input 
         className="form-control"
         type = "text"
         name ="time"
-        placeholder = "How much time in minutes?"
+        placeholder = "in minutes?"
         value={time}
         onChange={handleTimeChange}
 />
