@@ -8,7 +8,8 @@ function Workout({ workout, deleteWorkout, favoriteHandler}){
         deleteWorkout(workout.id)
       }
 
-
+      const date = new Date(workout.date);
+      const sliced = String(date).slice(4,15);
 
 
 return(
@@ -20,7 +21,7 @@ return(
  : 
   <button className="favorite-off" onClick={()=>{favoriteHandler(workout)}}>
     ☆
-  </button>} {workout.date} </h1>
+  </button>} {sliced} </h1>
        <p> Exercise Type : {workout.workoutType}</p>
        <p>Distance : {workout.distance} miles</p>
        <p>Time : {workout.timeSpent} minutes</p>

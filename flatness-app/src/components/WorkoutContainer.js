@@ -10,11 +10,14 @@ function WorkoutContainer(){
     setWorkouts(deleteWorkout)
   }
   
-  
   useEffect(() =>{
-  fetch("http://localhost:3000/workouts")
-  .then((r) => r.json())
-  .then ((data) => setWorkouts(data))
+    fetch("http://localhost:3000/workouts")
+    .then((r) => r.json())
+    .then ((data) => {
+      const orderedDates = data.slice(0).sort((a,b)=>
+      b.date.localeCompare(a.date))
+      setWorkouts(orderedDates)
+    })
   }, [])
   
   function handleSubmit(newWorkout){
@@ -24,42 +27,42 @@ function WorkoutContainer(){
         "Content-Type" : "application/json"
       },
       body : JSON.stringify(newWorkout)   
-  }
-  fetch('http://localhost:3000/workouts', options )
-  .then((r) => r.json())
-  .then(data =>setWorkouts(...workouts, newWorkout) )
-  
+    }
+    fetch('http://localhost:3000/workouts', options )
+    .then((r) => r.json())
+    .then(data =>setWorkouts(...workouts, newWorkout) )
+    
   }
   function favoriteHandler(workout) {
     fetch(`http://localhost:3000/workouts/${workout.id}`, {
-        method: "PATCH",
-        headers: { "Content-type": "application/json" },
-        body: JSON.stringify({ favorite: !workout.favorite }),
-      })
-        .then((res) => {
-          console.log(res);
-          return res.json();
-        })
-        .then((data) => {
-          console.log(data);
-          const updatedWorkout = workouts.map((workout) => {
-            if (workout.id === data.id) {
-              return data;
-            } else {
-              return workout;
-            }
-          });
-          setWorkouts(updatedWorkout)
-        });
+      method: "PATCH",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify({ favorite: !workout.favorite }),
+    })
+    .then((res) => {
+      console.log(res);
+      return res.json();
+    })
+    .then((data) => {
+      console.log(data);
+      const updatedWorkout = workouts.map((workout) => {
+        if (workout.id === data.id) {
+          return data;
+        } else {
+          return workout;
+        }
+      });
+      setWorkouts(updatedWorkout)
+    });
   }
-
+  
   return(
-<div className="workoutContainer">
+    <div className="workoutContainer">
   <WorkoutForm  onSubmit={handleSubmit}/>
   <WorkoutList workouts={workouts} deleteWorkout={deleteHandler} favoriteHandler={favoriteHandler}/>
 </div>
   )
-
+  
 }
 
 export default WorkoutContainer;
