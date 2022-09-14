@@ -21,9 +21,9 @@ return(
   <button className="favorite-off" onClick={()=>{favoriteHandler(workout)}}>
     ☆
   </button>} {workout.date} </h1>
-       <p> {workout.workoutType}</p>
-       <p>{workout.distance} miles</p>
-       <p>{workout.timeSpent} minutes</p>
+       <p> Exercise Type : {workout.workoutType}</p>
+       <p>Distance : {workout.distance} miles</p>
+       <p>Time : {workout.timeSpent} minutes</p>
        <button onClick={() => clickHandler(workout.id)} className="delete">Delete 🗑</button>
     </div>
 )
