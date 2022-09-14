@@ -10,8 +10,12 @@ function Navbar(){
             About Us
             </Link>
             </button>
+            <Link to='/workouts'>
         <button>List of Workouts</button>
+        </Link>
+        <Link to="/addworkout">
         <button>Workout Form</button>
+        </Link>
         </div>
     )
 
