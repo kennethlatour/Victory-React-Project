@@ -7,7 +7,7 @@ function WorkoutList({workouts, deleteWorkout, favoriteHandler}){
       })
       
       return (
-      <div className="workout-container">
+      <div className="workout-list">
       
       {workoutList}
       

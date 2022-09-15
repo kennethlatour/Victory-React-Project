@@ -80,7 +80,7 @@ return (
     <option value= "Rollerblading">Rollerblading</option>
 
             </select>
-            <button>Submit Workout</button>
+            <button className="submitButton" >Submit Workout</button>
     </div>
 </form>
 )
