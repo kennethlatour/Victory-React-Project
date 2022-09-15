@@ -9,9 +9,9 @@ function Navbar() {
       <button className="aboutButton">
         <Link to="/About">About Us</Link>
       </button>
-      <Link to="/workouts">
-        <button className="workoutButton">List of Workouts</button>
-      </Link>
+      <button className="workoutButton">
+      <Link to="/workouts">List of Workouts</Link>
+      </button>
     </div>
   );
 }
