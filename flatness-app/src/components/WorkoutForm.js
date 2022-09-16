@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import '../App.css';
 
 function WorkoutForm({ onSubmit}){
     const [distance, setDistance] =useState('')
@@ -72,13 +73,13 @@ return (
         onChange={handleTimeChange}
 />
 </div>
-<select className ="form-control" name="exercise" value={exercise} onChange={handleExerciseChange}>
+<select className ="form-dropdown" name="exercise" value={exercise} onChange={handleExerciseChange}>
+    <label>Choose excercise:</label>
     <option value= "Walking">Walking</option>
     <option value= "Running">Running</option>
     <option value="Swimming">Swimming</option>
     <option value= "Biking">Biking</option>
     <option value= "Rollerblading">Rollerblading</option>
-
             </select>
             <button className="submitButton" >Submit Workout</button>
     </div>
