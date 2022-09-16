@@ -1,6 +1,6 @@
 # Flatness-React-Project
 
-This is a project designed by Shannone Ball, Renae Carter, Chris Ou, and Caleb Summeralls. The project is a take on a fitness app which is a one stop shop for keeping a record on different cardio based exercises. You can track your cardio excercises from walking, running, swimming, rollerblading, and biking. Keep track of the distance, time, and calories burned to make sure you're getting the most out of your workout. 
+This is a project designed by Renae Carter, Chris Ou, and Caleb Summeralls. The project is a take on a fitness app which is a one stop shop for keeping a record on different cardio based exercises. You can track your cardio excercises from walking, running, swimming, rollerblading, and biking. Keep track of the distance, time, and calories burned to make sure you're getting the most out of your workout. 
 
 To submit any bugs please visit https://www.sorrynotsorry.org 
 To submit any feedback please visit https://www.boostusup.org
