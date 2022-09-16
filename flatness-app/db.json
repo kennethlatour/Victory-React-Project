@@ -22,7 +22,7 @@
       "workoutType": "Swimming",
       "distance": 3,
       "timeSpent": 30,
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "workoutType": "Running",
       "distance": 5,
       "timeSpent": 60,
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 5,
@@ -55,14 +55,6 @@
       "distance": 2,
       "timeSpent": 20,
       "favorite": false
-    },
-    {
-      "id": 8,
-      "date": "09/15/2022",
-      "distance": "69",
-      "timeSpent": "69",
-      "workoutType": "Swimming",
-      "favorite": true
     }
   ]
 }

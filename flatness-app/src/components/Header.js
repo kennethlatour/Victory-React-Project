@@ -1,13 +1,11 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
 
-function Header(){
-
-return(
-    
-<Navbar/>
-
-)
-
+function Header() {
+  return (
+    <div className="header">
+      <Navbar />
+    </div>
+  );
 }
 
-export default Header
+export default Header;

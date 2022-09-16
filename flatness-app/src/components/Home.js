@@ -14,7 +14,8 @@ return(
         <li>Roller Blading</li>
         <li>Biking</li>
     </ul>
-    <h3>Flatness will keep track of the time you spent running, the distance of how far you ran, the date of the workout, and will calculate an approximate of how many calories you burned during the workout.</h3>
+    <h3>Flatness will keep track of the time you spent running, the distance of how far you ran, the date of the workout, and will calculate an approximate of how many calories you burned during the workout.
+    </h3>
 
     </div>
 )

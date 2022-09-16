@@ -1,4 +1,5 @@
 import Workout from "./Workout";
+import '../App.css';
 
 function WorkoutList({workouts, deleteWorkout, favoriteHandler}){
 
@@ -7,7 +8,7 @@ function WorkoutList({workouts, deleteWorkout, favoriteHandler}){
       })
       
       return (
-      <div className="workout-list">
+      <div className="workoutlist">
       
       {workoutList}
       
