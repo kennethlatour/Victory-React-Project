@@ -67,7 +67,7 @@ return (
         className="form-control"
         type = "text"
         name ="time"
-        placeholder = "in minutes?"
+        placeholder = "in minutes"
         value={time}
         onChange={handleTimeChange}
 />
