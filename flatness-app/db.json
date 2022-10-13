@@ -2,59 +2,51 @@
   "workouts": [
     {
       "id": 1,
-      "date": "09/04/2022",
-      "workoutType": "Running",
+      "date": "09.04.2022",
+      "workoutType": "Run",
       "distance": 3,
       "timeSpent": 30,
       "favorite": false
     },
     {
       "id": 2,
-      "date": "09/05/2022",
-      "workoutType": "Walking",
+      "date": "09.05.2022",
+      "workoutType": "Walk",
       "distance": 5,
       "timeSpent": 54,
       "favorite": false
     },
     {
       "id": 3,
-      "date": "09/06/2022",
-      "workoutType": "Swimming",
+      "date": "09.06.2022",
+      "workoutType": "Swim",
       "distance": 3,
       "timeSpent": 30,
       "favorite": true
     },
     {
       "id": 4,
-      "date": "09/07/2022",
-      "workoutType": "Running",
+      "date": "09.07.2022",
+      "workoutType": "Run",
       "distance": 5,
       "timeSpent": 60,
       "favorite": true
     },
     {
       "id": 5,
-      "date": "09/08/2022",
-      "workoutType": "Walking",
+      "date": "09.08.2022",
+      "workoutType": "Walk",
       "distance": 4,
       "timeSpent": 80,
       "favorite": true
     },
     {
       "id": 6,
-      "date": "09/09/2022",
-      "workoutType": "Running",
+      "date": "09.09.2022",
+      "workoutType": "Run",
       "distance": 2,
       "timeSpent": 20,
       "favorite": true
-    },
-    {
-      "id": 7,
-      "date": "09/12/2022",
-      "workoutType": "Swimming",
-      "distance": 2,
-      "timeSpent": 20,
-      "favorite": false
     }
   ]
 }

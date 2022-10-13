@@ -4,7 +4,7 @@ import '../App.css';
 function WorkoutForm({ onSubmit}){
     const [distance, setDistance] =useState('')
     const [time, setTime] = useState('')
-    const [exercise, setExercise] = useState("Walking")
+    const [exercise, setExercise] = useState("Walk")
     const [date, setDate] = useState('')
 
 function handleDateChange(e){
@@ -40,50 +40,51 @@ return (
     onSubmit(newWorkout)
     }
 }>
-    
+
 <div className="form-entry">
     <div className="col-5">
-        <label>What date did you complete this workout?</label><br/>
+        <label></label><br/>
         <input 
         className="form-control"
         type = "text"
         name ="date"
-        placeholder = "MM/DD/YYYY"
+        placeholder = "MM.DD.YYYY"
         value={date}
         onChange={handleDateChange}/>
         </div>
     <div className="col-5">
-        <label>Your distance traveled?</label><br/>
+        <label></label><br/>
         <input 
         className="form-control"
         type = "text"
         name ="distance"
-        placeholder = "in miles"
+        placeholder = "Miles Travelled"
         value={distance}
         onChange={handleDistanceChange}/>
   </div>
     <div className="col-5">
-        <label>Time taken?</label><br/>
+        <label></label><br/>
         <input 
         className="form-control"
         type = "text"
         name ="time"
-        placeholder = "in minutes"
+        placeholder = "Minutes it taken"
         value={time}
         onChange={handleTimeChange}
 />
 </div>
 <select className ="form-dropdown" name="exercise" value={exercise} onChange={handleExerciseChange}>
     
-    <option value= "Walking">Walking</option>
-    <option value= "Running">Running</option>
-    <option value="Swimming">Swimming</option>
-    <option value= "Biking">Biking</option>
-    <option value= "Rollerblading">Rollerblading</option>
+    <option value= "Walk">Walk</option>
+    <option value= "Run">Run</option>
+    <option value="Swim">Swim</option>
+    <option value= "Bike">Bike</option>
+    <option value= "Rollerblade">Rollerblade</option>
             </select>
-            <button className="submitButton" >Submit Workout</button>
+            <button className="submitButton" >Add</button>
     </div>
 </form>
+
 )
 }
 
