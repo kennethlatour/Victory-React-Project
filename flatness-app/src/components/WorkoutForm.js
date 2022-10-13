@@ -74,7 +74,7 @@ return (
 />
 </div>
 <select className ="form-dropdown" name="exercise" value={exercise} onChange={handleExerciseChange}>
-    <label>Choose excercise:</label>
+    
     <option value= "Walking">Walking</option>
     <option value= "Running">Running</option>
     <option value="Swimming">Swimming</option>

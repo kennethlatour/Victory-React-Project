@@ -19,7 +19,7 @@ function WorkoutContainer(){
       setWorkouts(orderedDates)
     })
   }, [])
-  
+
   function handleSubmit(newWorkout){
     const options = {
       method: "POST",
