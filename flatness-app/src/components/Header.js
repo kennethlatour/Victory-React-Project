@@ -8,7 +8,7 @@ function Header() {
     <div id = "nav" >
    <Navbar  bg="dark" variant="dark">
  <Container id = "cont">
-  <Navbar.Brand id = "name">Flatness</Navbar.Brand>
+  <Navbar.Brand id = "name">Victory</Navbar.Brand>
   <Nav className="me-auto">
     <Nav.Link href="/">Home</Nav.Link>
     <Nav.Link href="/workouts">Workouts</Nav.Link>
